@@ -1,0 +1,20 @@
+2018-01-05 16:41:37,774 [apollo.core.scheduler] INFO: Task #105: acquire machine: , tags: 'None'
+2018-01-05 16:41:38,185 [apollo.core.scheduler] INFO: Task #105: acquired machine vm-101, image: windows7_sp1_x86_cn_agent_f11i8j7o07r9, tags: 'ie8,x86,flash11.7.700.169,adobe_reader9.0.0,java7,agent,windows7,sp1,office2007,cn'
+2018-01-05 16:41:38,329 [apollo.auxiliary.sniffer] INFO: Started sniffer with PID 1204 (interface=virbr0, host=172.16.1.101, pcap=/home/s/apps/flamingo/flamingo/storage/analyses/105/dump.pcap)
+2018-01-05 16:41:41,723 [apollo.core.scheduler] INFO: Start machine vm-101 
+2018-01-05 16:41:47,636 [apollo.core.scheduler] INFO: Started machine vm-101 
+2018-01-05 16:41:47,640 [apollo.core.scheduler] INFO: Update task 105 status to running
+2018-01-05 16:41:47,646 [apollo.core.scheduler] WARNING: Update task 105 status to running failed, can't connect to zeus api.
+2018-01-05 16:41:47,651 [apollo.core.scheduler] WARNING: Update task 105 status to running failed.
+2018-01-05 16:41:47,656 [apollo.core.guest] INFO: Starting analysis on guest (id=vm-101, ip=172.16.1.101)
+2018-01-05 16:42:23,949 [apollo.core.resultserver] WARNING: Analyzer tried to overwrite an existing file, closing connection.
+2018-01-05 16:42:23,970 [apollo.core.resultserver] WARNING: Analyzer tried to overwrite an existing file, closing connection.
+2018-01-05 16:42:23,988 [apollo.core.resultserver] WARNING: Analyzer tried to overwrite an existing file, closing connection.
+2018-01-05 16:42:23,994 [apollo.core.resultserver] WARNING: Analyzer tried to overwrite an existing file, closing connection.
+2018-01-05 16:43:30,051 [apollo.core.guest] INFO: vm-101: analysis completed successfully
+2018-01-05 16:43:30,075 [apollo.core.scheduler] INFO: Stop machine vm-101
+2018-01-05 16:43:33,003 [apollo.core.scheduler] INFO: Stopped machine vm-101
+2018-01-05 16:43:33,007 [apollo.core.scheduler] INFO: Update task 105 status to completed
+2018-01-05 16:43:33,012 [apollo.core.scheduler] WARNING: Update task 105 status to completed failed, can't connect to zeus api.
+2018-01-05 16:43:33,015 [apollo.core.scheduler] WARNING: Update task 105 status to completed failed.
+2018-01-05 16:43:33,017 [apollo.core.scheduler] INFO: Task #105: analysis procedure completed

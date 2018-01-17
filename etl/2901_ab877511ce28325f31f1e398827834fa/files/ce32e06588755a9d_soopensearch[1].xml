@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>360搜索</ShortName>
+    <Description>360搜索是安全、精准、可信赖的新一代搜索引擎，依托于360母品牌的安全优势，全面拦截各类钓鱼欺诈等恶意网站，提供更放心的搜索服务。 360搜索 so靠谱。</Description>
+    <Url type="text/html" method="get" template="https://www.so.com/s?src=opensearch&amp;q={searchTerms}" />
+    <Image width="16" height="16">https://www.so.com/favicon.ico</Image>
+</OpenSearchDescription>

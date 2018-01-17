@@ -1,0 +1,18 @@
+2018-01-03 18:00:14,310 [apollo.core.scheduler] INFO: Task #100: acquire machine: , tags: 'None'
+2018-01-03 18:00:14,699 [apollo.core.scheduler] INFO: Task #100: acquired machine vm-101, image: windows7_sp1_x86_cn_agent_f11i8j7o07r9, tags: 'ie8,x86,flash11.7.700.169,adobe_reader9.0.0,java7,agent,windows7,sp1,office2007,cn'
+2018-01-03 18:00:14,845 [apollo.auxiliary.sniffer] INFO: Started sniffer with PID 9377 (interface=virbr0, host=172.16.1.101, pcap=/home/s/apps/flamingo/flamingo/storage/analyses/100/dump.pcap)
+2018-01-03 18:00:18,115 [apollo.core.scheduler] INFO: Start machine vm-101 
+2018-01-03 18:00:24,021 [apollo.core.scheduler] INFO: Started machine vm-101 
+2018-01-03 18:00:24,025 [apollo.core.scheduler] INFO: Update task 100 status to running
+2018-01-03 18:00:24,031 [apollo.core.scheduler] WARNING: Update task 100 status to running failed, can't connect to zeus api.
+2018-01-03 18:00:24,034 [apollo.core.scheduler] WARNING: Update task 100 status to running failed.
+2018-01-03 18:00:24,036 [apollo.core.guest] INFO: Starting analysis on guest (id=vm-101, ip=172.16.1.101)
+2018-01-03 18:02:02,881 [apollo.core.resultserver] WARNING: Analyzer tried to overwrite an existing file, closing connection.
+2018-01-03 18:02:02,884 [apollo.core.resultserver] WARNING: Analyzer tried to overwrite an existing file, closing connection.
+2018-01-03 18:02:03,372 [apollo.core.guest] INFO: vm-101: analysis completed successfully
+2018-01-03 18:02:03,397 [apollo.core.scheduler] INFO: Stop machine vm-101
+2018-01-03 18:02:06,272 [apollo.core.scheduler] INFO: Stopped machine vm-101
+2018-01-03 18:02:06,276 [apollo.core.scheduler] INFO: Update task 100 status to completed
+2018-01-03 18:02:06,281 [apollo.core.scheduler] WARNING: Update task 100 status to completed failed, can't connect to zeus api.
+2018-01-03 18:02:06,284 [apollo.core.scheduler] WARNING: Update task 100 status to completed failed.
+2018-01-03 18:02:06,287 [apollo.core.scheduler] INFO: Task #100: analysis procedure completed

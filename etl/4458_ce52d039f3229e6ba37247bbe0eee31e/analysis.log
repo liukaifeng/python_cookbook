@@ -1,0 +1,65 @@
+2018-01-05 16:41:37,108 [root] INFO: File type is: 7z
+2018-01-05 16:41:38,418 [root] INFO: Extract to path:C:\Users\ADMINI~1\AppData\Local\Temp\ce52d039f3229e6ba37247bbe0eee31e
+2018-01-05 16:41:38,418 [root] INFO: Select file is: 邮件转移操作指南.pdf
+2018-01-05 16:41:38,466 [root] INFO: New target is: 9de7224af07b1a5dab8b563523d2face.pdf
+2018-01-05 16:41:38,466 [root] INFO: New file type is: pdf
+2018-01-05 16:41:38,466 [lib.core.pipe] INFO: Popup click turn on.
+2018-01-05 16:41:38,466 [root] INFO: Start cmd pipe server.
+2018-01-05 16:41:38,482 [root] INFO: Find package: pdf to analysis sample type: pdf
+2018-01-05 16:41:38,482 [root] INFO: Automatically selected analysis package "pdf"
+2018-01-05 16:41:38,482 [root] INFO: Started auxiliary module Screenshots
+2018-01-05 16:41:38,482 [root] INFO: Started auxiliary module RecentFiles
+2018-01-05 16:41:38,496 [root] INFO: Started auxiliary module Human
+2018-01-05 16:41:38,496 [root] INFO: Started auxiliary module HttpServer
+2018-01-05 16:41:38,513 [lib.api.process] INFO: Inject type: lightvm
+2018-01-05 16:41:38,513 [lib.api.process] INFO: Process injected image file: D:\bin\ProcLauncher.exe
+2018-01-05 16:41:38,528 [lib.api.process] INFO: hook type: NORMAL
+2018-01-05 16:41:38,700 [lib.core.pipe] INFO: BUILDTIME: Sep 14 2017 - 15:55:25
+2018-01-05 16:41:38,762 [lib.api.process] INFO: Successfully executed process with pid:1576, tid:792, app:D:\bin\ProcLauncher.exe, args:-r createprocess -f "\"C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe\" \"C:\Users\ADMINI~1\AppData\Local\Temp\ce52d039f3229e6ba37247bbe0eee31e\9de7224af07b1a5dab8b563523d2face.pdf\""
+2018-01-05 16:41:40,775 [lib.api.process] INFO: Successfully resumed process with pid 1576, tid:792
+2018-01-05 16:41:41,071 [lib.core.pipe] INFO: ProcLauncher running a process: "C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe" "C:\Users\ADMINI~1\AppData\Local\Temp\ce52d039f3229e6ba37247bbe0eee31e\9de7224af07b1a5dab8b563523d2face.pdf"!
+2018-01-05 16:41:41,071 [lib.api.popupclicklib] INFO: Add process: 3356 to popup click.
+2018-01-05 16:41:41,071 [lib.api.process] INFO: Inject type: lightvm
+2018-01-05 16:41:41,071 [lib.api.process] INFO: Process injected image file: C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe
+2018-01-05 16:41:41,101 [lib.api.process] INFO: hook type: NORMAL
+2018-01-05 16:41:41,211 [lib.core.pipe] INFO: BUILDTIME: Sep 14 2017 - 15:55:25
+2018-01-05 16:41:41,460 [lib.core.pipe] INFO: MemFill maybe config disable or no items handle success.
+2018-01-05 16:41:44,362 [lib.api.process] INFO: Successfully executed process with pid:3356, tid:3360
+2018-01-05 16:41:44,362 [lib.core.pipe] INFO: Injected into process with pid 3356 and name u'AcroRd32.exe'
+2018-01-05 16:41:52,631 [lib.api.files] INFO: Upload dropped file to host:C:\Users\Administrator\AppData\Roaming\Adobe\Acrobat\9.0\SharedDataEvents-journal.
+2018-01-05 16:41:52,631 [lib.api.files] INFO: File:C:\Users\Administrator\AppData\Roaming\Adobe\Acrobat\9.0\SharedDataEvents-journal have been copied before.
+2018-01-05 16:41:52,661 [lib.api.files] INFO: File:C:\Users\Administrator\AppData\Roaming\Adobe\Acrobat\9.0\SharedDataEvents-journal have been copied before.
+2018-01-05 16:41:52,661 [lib.api.files] INFO: File:C:\Users\Administrator\AppData\Roaming\Adobe\Acrobat\9.0\SharedDataEvents-journal have been copied before.
+2018-01-05 16:41:52,677 [lib.api.files] INFO: File:C:\Users\Administrator\AppData\Roaming\Adobe\Acrobat\9.0\SharedDataEvents-journal have been copied before.
+2018-01-05 16:41:52,677 [lib.api.files] INFO: File:C:\Users\Administrator\AppData\Roaming\Adobe\Acrobat\9.0\SharedDataEvents-journal have been copied before.
+2018-01-05 16:42:02,427 [lib.core.pipe] CRITICAL: Encountered an unknown process while in monitoring mode: "C:\Program Files\Common Files\Adobe\Updater6\Adobe_Updater.exe" -doActionAppID=reader9rdr-en_US!
+2018-01-05 16:42:02,427 [lib.api.popupclicklib] INFO: Add process: 2688 to popup click.
+2018-01-05 16:42:02,427 [lib.api.process] INFO: Inject type: lightvm
+2018-01-05 16:42:02,427 [lib.api.process] INFO: Process injected image file: C:\Program Files\Common Files\Adobe\Updater6\Adobe_Updater.exe
+2018-01-05 16:42:02,427 [lib.api.process] INFO: hook type: NORMAL
+2018-01-05 16:42:02,927 [lib.core.pipe] INFO: BUILDTIME: Sep 14 2017 - 15:55:25
+2018-01-05 16:42:03,066 [lib.core.pipe] INFO: MemFill maybe config disable or no items handle success.
+2018-01-05 16:42:05,111 [lib.api.process] INFO: Successfully executed process with pid:2688, tid:2608
+2018-01-05 16:42:05,111 [lib.core.pipe] INFO: Injected into process with pid 2688 and name u'Adobe_Updater.exe'
+2018-01-05 16:42:05,766 [lib.api.files] INFO: Upload dropped file to host:C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\2PVJRI1N\desktop.ini.
+2018-01-05 16:42:05,782 [lib.api.files] INFO: Upload dropped file to host:C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\2PVJRI1N\favicon[1].png.
+2018-01-05 16:42:05,782 [lib.api.files] INFO: Upload dropped file to host:C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\2PVJRI1N\wb[1].gif.
+2018-01-05 16:42:05,796 [lib.api.files] INFO: Upload dropped file to host:C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\BHPUH5J0\desktop.ini.
+2018-01-05 16:42:05,796 [lib.api.files] INFO: Upload dropped file to host:C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\BHPUH5J0\favicon[1].png.
+2018-01-05 16:42:05,812 [lib.api.files] INFO: Upload dropped file to host:C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\BHPUH5J0\w[1].gif.
+2018-01-05 16:42:05,812 [lib.api.files] INFO: Upload dropped file to host:C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\NXZXRD2M\desktop.ini.
+2018-01-05 16:42:05,828 [lib.api.files] INFO: Upload dropped file to host:C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\NXZXRD2M\wb[1].gif.
+2018-01-05 16:42:36,857 [root] INFO: Receive time over message.
+2018-01-05 16:42:37,667 [root] INFO: Process with pid 2688 has terminated
+2018-01-05 16:43:11,207 [root] INFO: Analysis timeout hit, terminating analysis.
+2018-01-05 16:43:11,207 [root] INFO: Terminating remaining processes before shutdown.
+2018-01-05 16:43:11,207 [lib.api.process] INFO: Successfully terminated process with pid 1576.
+2018-01-05 16:43:11,223 [lib.api.process] INFO: Successfully terminated process with pid 3356.
+2018-01-05 16:43:11,223 [root] INFO: Have close all the behavior log socket.
+2018-01-05 16:43:11,239 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\adobe\updater6\aumlib.log.
+2018-01-05 16:43:11,239 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\roaming\adobe\acrobat\9.0\shareddataevents.
+2018-01-05 16:43:11,239 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\adobe\acrobat\9.0\updater\updater.log.
+2018-01-05 16:43:11,255 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\adobe\updater6\aum.log.
+2018-01-05 16:43:11,255 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\adobe\updater6\adobeupdaterprefs.dat.
+2018-01-05 16:43:11,255 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\roaming\adobe\acrobat\9.0\usercache.bin.
+2018-01-05 16:43:11,723 [root] INFO: Analysis completed.

@@ -1,0 +1,51 @@
+2018-01-03 18:00:14,015 [lib.core.pipe] INFO: Popup click turn on.
+2018-01-03 18:00:14,015 [root] INFO: Start cmd pipe server.
+2018-01-03 18:00:14,015 [root] INFO: Automatically selected analysis package "ie"
+2018-01-03 18:00:14,015 [root] INFO: Started auxiliary module Screenshots
+2018-01-03 18:00:14,030 [root] INFO: Started auxiliary module RecentFiles
+2018-01-03 18:00:14,030 [root] INFO: Started auxiliary module Human
+2018-01-03 18:00:14,030 [root] INFO: Started auxiliary module HttpServer
+2018-01-03 18:00:14,062 [lib.api.process] INFO: Inject type: lightvm
+2018-01-03 18:00:14,062 [lib.api.process] INFO: Process injected image file: D:\bin\ProcLauncher.exe
+2018-01-03 18:00:14,078 [lib.api.process] INFO: hook type: EXPLOIT|IEXPLORE
+2018-01-03 18:00:14,217 [lib.core.pipe] INFO: BUILDTIME: Sep 14 2017 - 15:55:25
+2018-01-03 18:00:14,296 [lib.api.process] INFO: Successfully executed process with pid:3696, tid:3700, app:D:\bin\ProcLauncher.exe, args:-r createprocess -f "\"C:\Program Files\Internet Explorer\iexplore.exe\" \"http://www.so.com\""
+2018-01-03 18:00:16,308 [lib.api.process] INFO: Successfully resumed process with pid 3696, tid:3700
+2018-01-03 18:00:16,371 [lib.core.pipe] INFO: ProcLauncher running a process: "C:\Program Files\Internet Explorer\iexplore.exe" "http://www.so.com"!
+2018-01-03 18:00:16,371 [lib.api.popupclicklib] INFO: Add process: 3816 to popup click.
+2018-01-03 18:00:16,371 [lib.api.process] INFO: Inject type: lightvm
+2018-01-03 18:00:16,371 [lib.api.process] INFO: Process injected image file: C:\Program Files\Internet Explorer\iexplore.exe
+2018-01-03 18:00:16,371 [lib.api.process] INFO: hook type: EXPLOIT|IEXPLORE
+2018-01-03 18:00:16,526 [lib.core.pipe] INFO: BUILDTIME: Sep 14 2017 - 15:55:25
+2018-01-03 18:00:16,619 [lib.core.pipe] INFO: MemFill maybe config disable or no items handle success.
+2018-01-03 18:00:17,181 [lib.api.process] INFO: Successfully executed process with pid:3816, tid:3820
+2018-01-03 18:00:17,181 [lib.core.pipe] INFO: Injected into process with pid 3816 and name u'iexplore.exe'
+2018-01-03 18:00:22,329 [lib.core.pipe] INFO: Following legitimate IE8 process: "C:\Program Files\Internet Explorer\iexplore.exe" SCODEF:3816 CREDAT:14337!
+2018-01-03 18:00:22,329 [lib.api.popupclicklib] INFO: Add process: 3964 to popup click.
+2018-01-03 18:00:22,329 [lib.api.process] INFO: Inject type: lightvm
+2018-01-03 18:00:22,329 [lib.api.process] INFO: Process injected image file: C:\Program Files\Internet Explorer\iexplore.exe
+2018-01-03 18:00:22,329 [lib.api.process] INFO: hook type: EXPLOIT|IEXPLORE
+2018-01-03 18:00:22,470 [lib.core.pipe] INFO: BUILDTIME: Sep 14 2017 - 15:55:25
+2018-01-03 18:00:22,595 [lib.core.pipe] INFO: MemFill maybe config disable or no items handle success.
+2018-01-03 18:00:23,234 [lib.api.process] INFO: Successfully executed process with pid:3964, tid:3968
+2018-01-03 18:00:23,234 [lib.core.pipe] INFO: Injected into process with pid 3964 and name u'iexplore.exe'
+2018-01-03 18:01:46,585 [root] INFO: Analysis timeout hit, terminating analysis.
+2018-01-03 18:01:46,585 [root] INFO: Terminating remaining processes before shutdown.
+2018-01-03 18:01:46,585 [lib.api.process] INFO: Successfully terminated process with pid 3696.
+2018-01-03 18:01:46,601 [lib.api.process] INFO: Successfully terminated process with pid 3816.
+2018-01-03 18:01:46,601 [root] INFO: Have close all the behavior log socket.
+2018-01-03 18:01:46,617 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\windows\temporary internet files\content.ie5\09v6kip9\httperrorpagesscripts[1].
+2018-01-03 18:01:46,617 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\windows\temporary internet files\content.ie5\7o8uv96j\background_gradient[1].
+2018-01-03 18:01:46,617 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\internet explorer\recovery\high\active\{e6f58de3-f06c-11e7-8192-00163eebca63}.dat.
+2018-01-03 18:01:46,631 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\windows\temporary internet files\content.ie5\1xsshurq\desktop.ini.
+2018-01-03 18:01:46,631 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\windows\temporary internet files\content.ie5\09v6kip9\desktop.ini.
+2018-01-03 18:01:46,631 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\windows\temporary internet files\content.ie5\1xsshurq\down[1].
+2018-01-03 18:01:46,631 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\windows\temporary internet files\content.ie5\ve5722t4\desktop.ini.
+2018-01-03 18:01:46,648 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\windows\temporary internet files\content.ie5\ve5722t4\noconnect[1].
+2018-01-03 18:01:46,648 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\windows\temporary internet files\content.ie5\7o8uv96j\errorpagetemplate[1].
+2018-01-03 18:01:46,648 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\windows\temporary internet files\content.ie5\09v6kip9\favcenter[1].
+2018-01-03 18:01:46,648 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\internet explorer\recovery\high\active\recoverystore.{e6f58de2-f06c-11e7-8192-00163eebca63}.dat.
+2018-01-03 18:01:46,664 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\windows\temporary internet files\content.ie5\ve5722t4\dnserror[1].
+2018-01-03 18:01:46,664 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\windows\temporary internet files\content.ie5\ve5722t4\tools[1].
+2018-01-03 18:01:46,664 [lib.api.files] INFO: Upload dropped file to host:c:\users\administrator\appdata\local\microsoft\windows\temporary internet files\content.ie5\1xsshurq\errorpagestrings[1].
+2018-01-03 18:01:46,726 [root] INFO: Analysis completed.
