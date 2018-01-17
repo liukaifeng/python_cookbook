@@ -9,9 +9,11 @@ file_field_type_mapping = {
 file_check_result_index_name = 'skyeye_cloud_sandbox_file'
 url_check_result_index_name = 'skyeye_cloud_sandbox_url'
 
-es_client = Elasticsearch(hosts=['1.192.194.26'],
+es_client = Elasticsearch(hosts=['127.0.0.1'],
                           # sniff_on_start=True,
-                          # sniff_on_connection_fail=True,
-                          connection_class= Urllib3HttpConnection,
+                          retry_on_timeout = True,
+                          sniff_on_connection_fail=True,
+                          request_timeout=5,
+                          # connection_class= Urllib3HttpConnection,
                           sniffer_timeout=60
                           )

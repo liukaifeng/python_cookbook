@@ -6,6 +6,8 @@ import time
 import traceback
 from pprint import pprint
 
+import elasticsearch.helpers
+
 import utils
 
 
@@ -105,9 +107,32 @@ def proccess_url_runtime_file(file_dir, result_map):
 
 
 def write_result_to_es(result_map, index, doc_type='result'):
-    response = utils.es_client.index(index=index, doc_type=doc_type, body=result_map)
-    if response.get('created', '') != True:
-        raise Exception('write es failed')
+    try:
+        response = utils.es_client.index(index=index, doc_type=doc_type, body=result_map)
+        if response.get('created', '') != True:
+            traceback.print_exc()
+            # raise Exception('write es failed')
+    except BaseException, ex:
+        print ex
+        traceback.print_exc()
+
+
+def write_result_to_es_by_bulk(result_maps, index, doc_type='result'):
+    try:
+        actions = [
+            {
+                '_op_type': 'index',
+                '_index': index,
+                '_type': doc_type,
+                '_source': d
+            }
+            for d in result_maps
+        ]
+        response = elasticsearch.helpers.bulk(client=utils.es_client, actions=actions)
+        print response
+    except BaseException, ex:
+        print ex
+        traceback.print_exc()
 
 
 def extractor_file_check_result(file_dir):
