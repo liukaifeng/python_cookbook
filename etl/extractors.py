@@ -96,8 +96,6 @@ class EsUtils(object):
             # network_url:target/urls
             result_map['network_url'] = dynamic_result.get('target', {}).get('file', {}).get('urls', [])
             self._extract_common_info(dynamic_result, result_map)
-        else:
-            raise Exception("File not exists")
 
     def proccess_task_file(self, file_dir, result_map):
         task_info = open_file('%s%s/task.json' % (file_dir, os.path.sep,))
@@ -106,12 +104,11 @@ class EsUtils(object):
             result_map['task_id'] = task_info['submit_info']['task_id']
             result_map['start_time'] = task_info['submit_info']['accept_time']
             result_map['end_time'] = task_info['submit_info']['finish_time']
-            result_map['sample_path'] = task_info['submit_info']['remote_path']
+            result_map['sample_path'] = task_info['submit_info'].get('remote_path', '')
             result_map['result_path'] = task_info['submit_info']['result_path']
             result_map['check_status'] = task_info['submit_info'].get('check_status', {})
-            result_map['check_envrionment'] = {'machine': task_info['submit_info']['check_param']['machine'],
-                                               'analyzer': task_info['submit_info']['analyze_type']}
-
+            result_map['check_envrionment'] = {'machine': task_info['submit_info']['check_param'].get('machine',''),
+                                               'analyzer': task_info['submit_info'].get('analyze_type','')}
         else:
             raise Exception("File not exists")
 
@@ -120,11 +117,9 @@ class EsUtils(object):
         if jsons:
             screen_list = []
             for json_line in jsons:
-                if json_line.get('path','').startswith('shots'):
+                if json_line.get('path', '').startswith('shots'):
                     screen_list.append(json_line['path'])
             result_map['screen'] = list(set(screen_list))
-        else:
-            raise Exception("File not exists")
 
     def proccess_url_runtime_file(self, file_dir, result_map):
         dynamic_result = open_file('%s%sreports/report.json' % (file_dir, os.path.sep,))
@@ -203,7 +198,7 @@ class EsUtils(object):
 
 if __name__ == '__main__':
     es = EsUtils()
-    # es.extractor_file_check_result("D:/sc/git/python_cookbook/etl/4458_ce52d039f3229e6ba37247bbe0eee31e")
+    es.extractor_file_check_result("D:/sc/git/python_cookbook/etl/000000000106d770cea0f634f14df3fb9b99ddf4")
     # es.extractor_url_check_result("D:/sc/git/python_cookbook/etl/0336_ab877511ce28325f31f1e398827834fa")
     # es.extractor_url_check_result("D:/sc/git/python_cookbook/etl/2901_ab877511ce28325f31f1e398827834fa")
-    es.extractor_url_check_result("D:/sc/git/python_cookbook/etl/645302318a754322c5d3209f8d444f5bf0b051ee")
+    # es.extractor_url_check_result("D:/sc/git/python_cookbook/etl/445302318a754322c5d3209f8d444f5bf0b051ee")

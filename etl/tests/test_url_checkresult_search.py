@@ -10,7 +10,7 @@ from elasticsearch import Elasticsearch
 
 class URLCheckresultTestCase(unittest.TestCase):
     def setUp(self):
-        self.es_client = Elasticsearch(hosts=['127.0.0.1'],
+        self.es_client = Elasticsearch(hosts=['1.192.194.26'],
                                        sniff_on_start=True,
                                        sniff_on_connection_fail=True,
                                        sniffer_timeout=60
@@ -27,6 +27,17 @@ class URLCheckresultTestCase(unittest.TestCase):
         print("Got %d Hits:" % res['hits']['total'])
 
     def test_find_url_result_from_term(self):
+        res = self.es_client.search(index=self.index, doc_type=self.type,
+                                    body={"query": {"term": {"url_sha1": "d87edbd0e0c73fe36b9be6c9cbb1c368cc0c49ec"}}})
+        print("Got %d Hits:" % res['hits']['total'])
+
+    def test_find_url_result_from_taskid(self):
+        res = self.es_client.search(index=self.index, doc_type=self.type,
+                                    body={"query": {"term": {"task_id": "222222228a754322c5d3209f8d444f5bf0b051ee"}}})
+        pprint(res)
+        print("Got %d Hits:" % res['hits']['total'])
+
+    def test_find_url_result_order_by(self):
         res = self.es_client.search(index=self.index, doc_type=self.type,
                                     body={"query": {"term": {"url_sha1": "d87edbd0e0c73fe36b9be6c9cbb1c368cc0c49ec"}}})
         print("Got %d Hits:" % res['hits']['total'])

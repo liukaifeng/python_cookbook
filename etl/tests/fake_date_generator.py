@@ -12,7 +12,7 @@ from etl import utils
 from etl.extractors import write_result_to_es, write_result_to_es_by_bulk
 from random_s.fake_provider import *
 
-DATA_SIZE = 200000000
+DATA_SIZE = 10000000
 BATCH_SIZE = 1000
 
 class FakeDataFactory():
