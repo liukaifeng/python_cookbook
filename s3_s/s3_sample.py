@@ -1,15 +1,13 @@
 # -*- coding:utf-8 -*-
-import threading
-
-import boto3
-import botocore
-import time
-from boto3 import Session
 import os
+import threading
+import time
+
+from boto3 import Session
 
 # session = boto3.session.Session()
 
-BUCKET_NAME = 'skyeye_cloud_sandbox'  # replace with your bucket name
+BUCKET_NAME = 'XXcloud_sandbox'  # replace with your bucket name
 KEY = 'schema.json'  # replace with your object key
 sample_file = './__init__.py'
 sample_file_key = 's3_sample_1'
@@ -179,7 +177,6 @@ class AdminManager():
 
 
 def batch_upload():
-    import sys
     resource = ResourceManager(ak, sk, resource_ep)
     for file_name in os.listdir('./'):
         resource.upload(file_name, file_name)
@@ -190,7 +187,7 @@ if __name__ == '__main__':
     # resource.get_bucket_acl('test_bucket')
     # resource.get_buckets()
     # resource.get_bucket_info()
-    # resource.create_bucket('skyeye_cloud_sandbox')
+    # resource.create_bucket('XXcloud_sandbox')
 
     resource = ResourceManager(ak, sk, resource_ep)
     # resource.list_files();
