@@ -10,7 +10,7 @@ from boto3 import Session
 BUCKET_NAME = 'XXcloud_sandbox'  # replace with your bucket name
 KEY = 'schema.json'  # replace with your object key
 sample_file = './__init__.py'
-sample_file_key = 's3_sample_1'
+sample_file_key = 'aaa/2018/02/03/s3_sample_1'
 
 ak = 'VmpGb2QxTXdNVVpPVm1ScVVtMTRjRlZxVG05WGJGSllZM3BHYkdKSGVIaFdSM2hyWVVVeFdGcEVXbGRTZWtaMldWWmtTMVl4VG5WUmJIQm9ZWHBXTVZWNlRtcGphM1F6UzNsekt3Kys+'
 sk = '791867e3bc334355aa28d97e2985ee08'
@@ -176,12 +176,6 @@ class AdminManager():
         print "桶内对象个数:", resp['ResponseMetadata']['HTTPHeaders']['x-rgwobject-count']
 
 
-def batch_upload():
-    resource = ResourceManager(ak, sk, resource_ep)
-    for file_name in os.listdir('./'):
-        resource.upload(file_name, file_name)
-
-
 if __name__ == '__main__':
     # resource = AdminManager(ak, sk, manager_ep)
     # resource.get_bucket_acl('test_bucket')
@@ -192,11 +186,10 @@ if __name__ == '__main__':
     resource = ResourceManager(ak, sk, resource_ep)
     # resource.list_files();
     # resource.upload_str_obj('asdlkfasldkfalsdkfalsdkfalsdkfalsdkfj')
-    # resource.upload(sample_file_key,sample_file)
+    resource.upload(sample_file_key,sample_file)
     # resource.download()
-    resource.download('kibana.zip')
+    # resource.download('kibana.zip')
     # resource.head(sample_file)
     # resource.exist(sample_file)
     #resource.upload_by_multipart('kibana.zip', './500Mfile')
     #resource.upload_by_multipart_by_thread('kibana.zip', './500Mfile')
-    # batch_upload()
