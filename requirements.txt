@@ -1,6 +1,6 @@
 alembic==0.9.6
 aniso8601==2.0.0
-bleach==2.1.2
+bleach==3.1.4
 blinker==1.4
 certifi==2017.11.5
 chardet==3.0.4
